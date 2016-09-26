@@ -1,0 +1,1006 @@
+/* 01. Подключаем шрифт myriad set pro  -------------------------- */
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:100;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_ultralight.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_ultralight.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:italic;
+	font-weight:100;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_ultralight-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_ultralight-italic.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro 100';
+	src:url("/wss/fonts/Myriad-Set-Pro/v1/myriad-set-pro_ultralight.eot");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:200;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:italic;
+	font-weight:200;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin-italic.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro 200';
+	src:url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin.eot");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:italic;
+	font-weight:400;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text-italic.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:italic;
+	font-weight:600;
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold-italic.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro 600';
+	src:url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold.eot");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:400;
+	src:url("../fonts/Myriad-Set-Pro/myriad-set-pro_text.eot");
+	src:local('☺︎'), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+
+/* 01. Desktop Wrapper  -------------------------- */
+.container {
+	position:relative;
+	z-index:0;
+}
+
+/* 02. Mobile Wrapper  -------------------------- */
+
+/* Browsers from 0 up to 767 iPhone Portrait + Landscape (iPad Portrait width is 768) */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+	.container{
+		-o-transition:.8s;
+		-ms-transition:.8s;
+		-moz-transition:.8s;
+		-webkit-transition:.8s;
+		transition:.8s;
+		width:100%;
+		position:relative;
+		opacity:1;
+		z-index:0;
+	}
+
+}
+
+body {
+	width:100%;
+	margin:0 auto;
+	background-color:#fff;
+	color:#999ea3;
+	font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+    line-height: 1.45;
+    font-weight: 400;
+	-webkit-text-size-adjust: none;  /* размер текста на мобильнике не изменяется */
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
+}
+html {
+	margin:0 auto;
+	overflow-x:hidden;
+}
+
+
+h1 {
+	font-size: 44px;
+    line-height: 1.0;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+	}
+h2 { font-size: 32px;
+    line-height: 1.0;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+	}
+h3 { font-size: 22px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+	}
+h4 { font-size: 20px;
+    line-height: 1.0;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+	}
+h5 { font-size: 18px;
+    line-height: 1.0;
+    font-weight: 200;
+    letter-spacing: -0.01em;}
+h6 { font-size: 16px;
+    line-height: 1.0;
+    font-weight: 200;
+    letter-spacing: -0.01em;}
+
+
+/* Add style to columns to make them visible */
+section {
+	position:relative;
+}
+
+section .tv-grid .tv-grid-items, header .image-interface .image-interface-items 
+{
+	font-weight:normal;
+	width:100%;
+	margin:0 auto;
+	/* This creates the height of the columns, and centres the text. */
+	overflow: hidden;
+}
+
+section .tv-grid, footer {
+	margin:15px;
+}
+footer {
+	font-size: 14px;
+}
+.tv-grid-item {
+	position: relative;
+	background-color: #fff;
+	-webkit-box-sizing: border-box; /* Для Safari, Opera */
+	-moz-box-sizing: border-box; /* Для Firefox */
+	box-sizing: border-box; /* Ширина блока с полями */
+	display: -moz-inline-stack; /* Для Firefox 2 */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tv-channel-programm-item {
+	margin-bottom: 5px;
+	line-height: 18px;
+
+}
+.programm-item-link, .programm-item-title, .title-text {
+    display: inline;
+}
+.tv-series {
+    background: rgba(0,150,136,0.5);
+}
+.programm-item-link {
+	position: relative;
+	display:inline-block;
+    text-decoration: none;
+	padding-left: 40px;
+	color: #000;
+
+}
+
+.programm-item-time{
+    font-weight: 700;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+.tv-channel-title {
+	height: 38px; /* высота равна высоте логотипа канала */
+    display: table-cell; /* красивый способ вертикального центрирования, который поддерживается во всех современных браузерах, и в IE8+ */
+	vertical-align: middle;
+    padding-bottom: 10px;
+	position: relative;
+	padding-left: 46px; /* 8px от логотипа */
+
+}
+
+
+.channel-title-link {
+    text-decoration: none;
+	color: #000;
+
+}
+.channel-title-logo {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.channel-title-image {
+    display: inline-block;
+}
+
+.picture {
+    border: 0 none;
+    font: 0px/0 a;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: block;
+	width: 38px;
+	height: 38px;
+}
+
+.channel-title-link h3 {
+	display: inline;
+}
+
+.first-channel {
+	background-image: url("../img/first-channel-38.png");
+}
+.russia-1-channel {
+	background-image: url("../img/russia-1-channel-38.png");
+}
+.five-channel {
+	background-image: url("../img/five-channel-38.png");
+}
+.ntv-channel {
+	background-image: url("../img/ntv-channel-38.png");
+}
+.tnt-channel {
+	background-image: url("../img/tnt-channel-38.png");
+}
+.muz-tv-channel {
+	background-image: url("../img/muz-tv-channel-38.png");
+}
+.tv3-channel {
+	background-image: url("../img/tv3-channel-38.png");
+}
+.mir-channel {
+	background-image: url("../img/mir-channel-38.png");
+}
+.two-two-channel {
+	background-image: url("../img/two-two-channel-38.png");
+}
+.eng-channel {
+	background-image: url("../img/eng-channel-38.png");
+}
+.cn-channel {
+	background-image: url("../img/cn-channel-38.png");
+}
+.cnn-channel {
+	background-image: url("../img/cnn-channel-38.png");
+}
+.set-channel {
+	background-image: url("../img/set-channel-38.png");
+}
+.sts-channel {
+	background-image: url("../img/sts-channel-38.png");
+}
+.friday-channel {
+	background-image: url("../img/friday-channel-38.png");
+}
+
+/* iPad Landscape + */
+@media only screen and (min-width: 1024px)  {
+
+	section .tv-grid .tv-grid-items
+	{
+		padding-bottom:14px;
+	}
+
+
+	section .tv-grid .tv-grid-items
+	{
+		min-height: 295px;
+	}
+
+
+	section .tv-grid .tv-grid-items .tv-grid-item  {
+		padding: 10px 30px 30px 10px; /* Настраиваем поля, чтобы текст не накладывался друг на друга */
+		width:25%;
+		min-height: 300px;
+	}
+
+
+}
+
+
+/* iPad Portrait + */
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+
+
+
+	section .tv-grid .tv-grid-items
+	{
+		padding-bottom:14px;
+	}
+
+	section .tv-grid .tv-grid-items
+	{
+		min-height: 260px;
+	}
+
+
+
+	section .tv-grid .tv-grid-items .tv-grid-item  {
+		padding: 10px 30px 30px 10px;
+		width: 33.3333%;
+		min-height: 270px;
+	}
+
+}
+
+
+/* iPhone Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+
+	section .tv-grid .tv-grid-items
+	{
+		padding-bottom:10px;
+	}
+
+	section .tv-grid .tv-grid-items
+	{
+		min-height: 225px;
+	}
+
+
+	section .tv-grid .tv-grid-items .tv-grid-item  {
+		padding: 10px 30px 30px 10px;
+		width:50%;
+		min-height: 230px;
+	}
+
+	/* уменьшаем размер шрифтов */
+	h1 { font-size: 35px;}
+	h2 { font-size: 25px;}
+	h3 { font-size: 18px;}
+
+	/* увеличиваем размер шрифтов */
+	h5 { font-size: 20px;}
+	h6 { font-size: 18px;}
+
+
+
+	/* уменьшаем высоту и размер поля слева*/
+	.tv-channel-title {
+		height: 32px; /* высота равна высоте логотипа */
+		padding-left: 40px; /* 8px от логотипа */
+	}
+
+	/* Картинки */
+	.picture {
+		width: 32px;
+		height: 32px;
+	}
+	.first-channel {
+		background-image: url("../img/first-channel-32.png");
+	}
+	.russia-1-channel {
+		background-image: url("../img/russia-1-channel-32.png");
+	}
+	.five-channel {
+		background-image: url("../img/five-channel-32.png");
+	}
+	.ntv-channel {
+		background-image: url("../img/ntv-channel-32.png");
+	}
+	.tnt-channel {
+		background-image: url("../img/tnt-channel-32.png");
+	}
+	.muz-tv-channel {
+		background-image: url("../img/muz-tv-channel-32.png");
+	}
+	.tv3-channel {
+		background-image: url("../img/tv3-channel-32.png");
+	}
+	.mir-channel {
+		background-image: url("../img/mir-channel-32.png");
+	}
+	.two-two-channel {
+		background-image: url("../img/two-two-channel-32.png");
+	}
+	.eng-channel {
+		background-image: url("../img/eng-channel-32.png");
+	}
+	.cn-channel {
+		background-image: url("../img/cn-channel-32.png");
+	}
+	.cnn-channel {
+		background-image: url("../img/cnn-channel-32.png");
+	}
+	.set-channel {
+		background-image: url("../img/set-channel-32.png");
+	}
+	.sts-channel {
+		background-image: url("../img/sts-channel-32.png");
+	}
+	.friday-channel {
+		background-image: url("../img/friday-channel-32.png");
+	}
+
+}
+
+
+/* iPhone Portrait */
+@media only screen and (min-width: 0px) and (max-width: 479px)  {
+
+	section .tv-grid {
+		margin:0;
+		background-color: gainsboro;
+	}
+
+	/* уменьшаем размер шрифтов */
+	h1 { font-size: 35px;}
+	h2 { font-size: 25px;}
+	h3 { font-size: 18px;}
+
+	/* увеличиваем размер шрифтов */
+	h5 { font-size: 20px;}
+	h6 { font-size: 18px;}
+
+	/* уменьшаем высоту и размер поля слева*/
+	.tv-channel-title {
+		height: 32px; /* высота равна высоте логотипа */
+		padding-left: 40px; /* 8px от логотипа */
+	}
+
+	/* Картинки */
+	/* уменьшаем размер логотипов */
+	.picture {
+		width: 32px;
+		height: 32px;
+	}
+	.first-channel {
+		background-image: url("../img/first-channel-32.png");
+	}
+	.russia-1-channel {
+		background-image: url("../img/russia-1-channel-32.png");
+	}
+	.five-channel {
+		background-image: url("../img/five-channel-32.png");
+	}
+	.ntv-channel {
+		background-image: url("../img/ntv-channel-32.png");
+	}
+	.tnt-channel {
+		background-image: url("../img/tnt-channel-32.png");
+	}
+	.muz-tv-channel {
+		background-image: url("../img/muz-tv-channel-32.png");
+	}
+	.tv3-channel {
+		background-image: url("../img/tv3-channel-32.png");
+	}
+	.mir-channel {
+		background-image: url("../img/mir-channel-32.png");
+	}
+	.two-two-channel {
+		background-image: url("../img/two-two-channel-32.png");
+	}
+	.eng-channel {
+		background-image: url("../img/eng-channel-32.png");
+	}
+	.cn-channel {
+		background-image: url("../img/cn-channel-32.png");
+	}
+	.cnn-channel {
+		background-image: url("../img/cnn-channel-32.png");
+	}
+	.set-channel {
+		background-image: url("../img/set-channel-32.png");
+	}
+	.sts-channel {
+		background-image: url("../img/sts-channel-32.png");
+	}
+	.friday-channel {
+		background-image: url("../img/friday-channel-32.png");
+	}
+
+	.tv-series {
+		background: none;
+	}
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px)  {
+
+	section .tv-grid .tv-grid-items
+	{
+		min-height: 200px;
+	}
+
+
+	section .tv-grid .tv-grid-items .tv-grid-item  {
+		padding: 10px 20px 10px 10px; /* Уменьшим поле справа */
+		width:100%;
+		min-height: 210px;
+		display: block;
+		margin-bottom:1px;
+
+	}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px)  {
+	/* уменьшаем размер шрифтов */
+	body {font-size: 14px;}
+
+	section .tv-grid .tv-grid-items
+	{
+		min-height: 210px;
+
+	}
+
+
+	section .tv-grid .tv-grid-items .tv-grid-item  {
+		padding: 10px 20px 10px 10px; /* Уменьшим поле справа */
+		width:100%;
+		min-height: 215px;
+		margin-bottom:1px;
+		display:block;
+
+	}
+
+
+}
+
+
+
+
+
+/* 02. Image Grid  -------------------------- */
+
+.image-interface-items {
+	background-color: #f2f2f2;
+	border: 4px solid #F2F2F2;
+	-webkit-box-sizing: border-box; /* Для Safari, Opera */
+	-moz-box-sizing: border-box; /* Для Firefox */
+
+}
+
+.image-interface-item {
+	position:relative;
+	float:left; /* обтекание по правой стороне */
+	-webkit-box-sizing: border-box; /* Для Safari, Opera */
+	-moz-box-sizing: border-box; /* Для Firefox */
+
+}
+
+.image-tv-show {
+	position:relative;
+}
+
+.image-top {
+	border-bottom: 8px solid #F2F2F2;
+}
+
+.show-thumb {
+	width: 100%;
+	height: auto;
+    display: block;
+}
+
+.show-channel-logo {
+	position:absolute;
+	top:0;
+	left:0
+}
+
+.image-large-iphone-landscape {
+	display:none
+}
+
+
+@media only screen and (min-width: 1024px)  {
+
+
+	header .image-interface .image-interface-items
+	{
+		margin-bottom:14px;
+	}
+
+	header .image-interface .image-interface-items .image-interface-item  {
+		border: 4px solid #F2F2F2;
+		width:15%;
+
+	}
+
+	header .image-interface .image-interface-items .image-large  {
+		border: 4px solid #F2F2F2;
+		width: 24.99%;
+	}
+
+
+
+}
+
+
+
+/* iPad Portrait + */
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+
+
+
+	header .image-interface .image-interface-items
+	{
+		margin-bottom:10px;
+	}
+
+
+	header .image-interface .image-interface-items .image-interface-item  {
+		border: 4px solid #F2F2F2;
+		width:15%;
+
+	}
+
+	header .image-interface .image-interface-items .image-large  {
+		border: 4px solid #F2F2F2;
+		width: 24.99%;
+	}
+
+	/* Логотипы каналов */
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .picture {
+		width: 32px;
+		height: 32px;
+	}
+
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .first-channel {
+		background-image: url("../img/first-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .russia-1-channel {
+		background-image: url("../img/russia-1-channel-32.png");
+	}
+
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .five-channel {
+		background-image: url("../img/five-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .ntv-channel {
+		background-image: url("../img/ntv-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .tnt-channel {
+		background-image: url("../img/tnt-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .muz-tv-channel {
+		background-image: url("../img/muz-tv-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .tv3-channel {
+		background-image: url("../img/tv3-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .mir-channel {
+		background-image: url("../img/mir-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .two-two-channel {
+		background-image: url("../img/two-two-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .eng-channel {
+		background-image: url("../img/eng-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .cn-channel {
+		background-image: url("../img/cn-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .cnn-channel {
+		background-image: url("../img/cnn-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .set-channel {
+		background-image: url("../img/set-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .sts-channel {
+		background-image: url("../img/sts-channel-32.png");
+	}
+	header .image-interface .image-interface-items .image-interface-item .show-channel-logo .friday-channel {
+		background-image: url("../img/friday-channel-32.png");
+	}
+}
+
+
+/* iPhone Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+
+	header .image-interface .image-interface-items
+	{
+		margin-bottom:10px;
+	}
+
+	header .image-interface .image-interface-items .summary {
+		display:none
+	}
+
+	header .image-interface .image-interface-items .image-large {
+		border: 4px solid #F2F2F2;
+		width: 50%;
+	}
+
+	header .image-interface .image-interface-items .image-large-iphone-landscape {
+		display:block;
+		border: 4px solid #F2F2F2;
+		width: 50%;
+	}
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px)  {
+
+
+
+	header .image-interface  {
+		display:none
+	}
+
+
+
+
+}
+
+/* 02. Progress Bar - canvas  -------------------------- */
+
+.timecircle {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+.progressbar {
+    position:relative;
+    margin:10px;
+}
+
+canvas {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.progressbar span {
+    color:#fff;
+    display:block;
+    line-height:40px;
+    text-align:center;
+    width:40px;
+    font-family:sans-serif;
+    font-size:12px;
+    font-weight:700;
+}
+
+
+
+/* 02. Программа на несколько дней  -------------------------- */
+.tv-filter-datepicker {
+	width:40%;
+	display: table;
+	float:left;
+	position:relative;
+	margin-left: 15px;	`
+}
+
+.tv-filter-days {
+	position:absolute;
+	top:25px;
+	left:0;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.tv-filter-days a {
+	text-decoration:none;
+	margin-right: 10px;
+	cursor:pointer;
+}
+.date-medium {
+	color: #ddd;
+    font-size: 60px;
+	font-weight:100;
+    line-height: 0.9;
+    letter-spacing: -0.025em;
+    font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 100;
+    white-space: nowrap;
+	-webkit-transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1); /* замедляем изменение цвета через через кривую Безье*/
+	transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.date-medium:hover {
+	color: #329fd6;
+
+
+}
+.date-large {
+	color: #08c;
+    font-size: 80px;
+	font-weight:100;
+    line-height: 0.9;
+    letter-spacing: -0.025em;
+    font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+
+/* iPad Portrait + */
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+	.date-medium {
+		font-size: 40px;
+	}
+	.date-large {
+		font-size: 60px;
+	}
+}
+/* iPhone Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+	.tv-filter-datepicker {
+		display:none;
+	}
+
+}
+@media only screen and (min-width: 0px) and (max-width: 479px)  {
+
+	.tv-filter-datepicker {
+		display:none;
+	}
+}
+
+
+
+/* 02. Фильтрация по фильмам, сериалам и спортивным передачам  -------------------------- */
+
+.tv-filter-programm-group {
+	float:right;
+}
+.tv-filter-programm-group .content {
+	padding: 6px 24px 24px;
+}
+.tv-filter-programm-group .header {
+	display: block;
+	font-size: 20px;
+	text-align: right;
+	color: rgba(0,0,0,0.84);
+	margin: 0;
+	padding: 0;
+
+}
+.tv-filter-programm-group ul {
+	display: block;
+	padding: 0;
+	width: 100%;
+}
+.tv-filter-programm-group ul li {
+	display: inline-block;
+	padding: 16px 0 0;
+}
+.tv-filter-programm-group ul li p {
+	display: inline-block;
+	line-height: 24px;
+	margin: 0 20px 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch_films, .switch_tv-series, .switch_sport {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 16px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.26);
+	-webkit-transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	vertical-align: middle;
+	cursor: pointer;
+}
+.switch_films::before, .switch_tv-series::before, .switch_sport::before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	width: 24px;
+	height: 24px;
+	background: #fafafa;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28);
+	border-radius: 50%;
+	-webkit-transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch_films:active::before, .switch_tv-series:active::before, .switch_sport:active::before  {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+}
+
+input:checked + .switch_films {
+	background: rgba(76,171,219,0.5);
+}
+input:checked + .switch_films::before {
+	left: 20px;
+	background: #08c;
+}
+input:checked + .switch_films:active::before {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(76,171,219,0.2);
+}
+
+input:checked + .switch_tv-series {
+	background: rgba(0,150,136,0.5);
+}
+input:checked + .switch_tv-series::before {
+	left: 20px;
+	background: #009688;
+}
+input:checked + .switch_tv-series:active::before {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
+
+
+input:checked + .switch_sport {
+	background: rgba(255,235,160,0.5);
+}
+input:checked + .switch_sport::before {
+	left: 20px;
+	background: #fc0;
+}
+input:checked + .switch_sport:active::before {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(255,235,160,0.2);
+}
+
+/* iPhone Portrait */
+@media only screen and (min-width: 0px) and (max-width: 479px)  {
+
+	/* прячем фильтр */
+	.tv-filter-programm-group {
+		display:none;
+	}
+}
+
+
+
+
+
+
+/* 02. Заголовок "Телепрограмма"  -------------------------- */
+.tv-programm-title .header {
+	display: none;
+	font-size: 20px;
+	color: rgba(0,0,0,0.84);
+	margin: 0;
+	padding: 10px 20px 10px 10px;
+
+}
+/* iPhone Portrait */
+@media only screen and (min-width: 0px) and (max-width: 479px)  {
+
+	/* прячем фильтр */
+	.tv-programm-title .header {
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 319px)  {
+	.tv-programm-title .header {
+		font-size: 18px;
+	}
+}
